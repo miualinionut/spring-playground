@@ -1,6 +1,5 @@
 package code.quartz.job.job01;
 
-import code.quartz.job.job02.QuartzJob02;
 import org.quartz.*;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
