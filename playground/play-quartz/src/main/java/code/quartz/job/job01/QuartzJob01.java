@@ -1,4 +1,4 @@
-package code.qurtz.job.job01;
+package code.quartz.job.job01;
 
 import code.service.HeavyWorkService;
 import org.quartz.Job;
@@ -14,7 +14,7 @@ public class QuartzJob01 implements Job {
     private HeavyWorkService heavyWorkService;
 
     public void execute(JobExecutionContext context) throws JobExecutionException {
-        System.out.println("QuartzJob01 running");
+        System.out.println(this.getClass().getSimpleName() + " is running");
         heavyWorkService.work(this.getClass().getSimpleName());
     }
 
