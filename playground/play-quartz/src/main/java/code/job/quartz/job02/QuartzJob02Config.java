@@ -1,4 +1,4 @@
-package code.quartz.job.job02;
+package code.job.quartz.job02;
 
 import org.quartz.*;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -37,7 +37,7 @@ public class QuartzJob02Config {
 
     @PostConstruct
     public void schedule() throws SchedulerException {
-        scheduler.scheduleJob(job02(), job02Trigger(null));
+        //scheduler.scheduleJob(job02(), job02Trigger(null));
     }
 
 }

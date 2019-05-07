@@ -1,5 +1,6 @@
-package code.quartz.config;
+package code.config;
 
+import code.config.util.AutoWiringSpringBeanJobFactory;
 import org.quartz.Scheduler;
 import org.quartz.SchedulerException;
 import org.quartz.impl.StdSchedulerFactory;
@@ -33,7 +34,7 @@ public class QuartzConfig {
         Scheduler scheduler = factory.getScheduler();
         scheduler.setJobFactory(springBeanJobFactory());
 
-        scheduler.start();
+        scheduler.startDelayed(5);
         return scheduler;
     }
 }

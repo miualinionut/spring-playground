@@ -1,4 +1,4 @@
-package code.quartz.job.job01;
+package code.job.quartz.job01;
 
 import org.quartz.*;
 import org.springframework.beans.factory.annotation.Autowired;
